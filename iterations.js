@@ -13,3 +13,9 @@ for (let x = 1; x < 6; x++) {
   myArray.push(x);
 }
 // Only change code below this linene
+// Setup
+const myArray = [];
+for (let i = 1; i < 10; i+=2){
+  myArray.push(i);
+}
+// Only change code below this line
