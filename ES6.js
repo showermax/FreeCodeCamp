@@ -25,3 +25,12 @@ const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
 console.log(sum(0, 1, 2));
+
+
+//Copy all contents of arr1 into another array arr2 using the spread operator.
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = arr2.concat(...arr1);  // Change this line
+
+console.log(arr2);
