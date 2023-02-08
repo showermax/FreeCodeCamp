@@ -16,3 +16,12 @@ var myConcat = function(arr1, arr2) {
   //Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
   //const increment = (number, value) => number + value;
 const increment = (number, value = 1) => number + value;
+
+// const sum = (x, y, z) => {
+//   const args = [x, y, z];
+//   return args.reduce((a, b) => a + b, 0);
+// }
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(0, 1, 2));
