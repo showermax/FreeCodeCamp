@@ -31,6 +31,6 @@ console.log(sum(0, 1, 2));
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
 
-arr2 = arr2.concat(...arr1);  // Change this line
+arr2 = [...arr1];  // Change this line
 
 console.log(arr2);
