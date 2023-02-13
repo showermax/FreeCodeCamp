@@ -36,3 +36,23 @@ let starRegex = /twinkle/gi; // Change this line
 let result1 = twinkleStar.match(starRegex); // Change this line
 result = "Twinkle, twinkle, little star".match(/twinkle/gi);
 console.log(result1, result, "Twinkle, twinkle, little star".match(/twinkle/gi));
+
+
+// The wildcard character . will match any one character. The wildcard is also called dot and period. You can use the wildcard character just like any other character in the regex. 
+//For example, if you wanted to match hug, huh, hut, and hum, you can use the regex /hu./ to match all four words.
+// let humStr = "I'll hum a song";
+// let hugStr = "Bear hug";
+// let huRegex = /hu./;
+// huRegex.test(humStr);
+// huRegex.test(hugStr);
+// Both of these test calls would return true.
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+ result = unRegex.test(exampleStr);
+
+// For example, you want to match bag, big, and bug but not bog. 
+//You can create the regex /b[aiu]g/ to do this. The [aiu] is the character class that will only match the characters a, i, or u.
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+ result = quoteSample.match(vowelRegex); // Change this line
+console.log(result);
