@@ -56,3 +56,15 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/gi; // Change this line
  result = quoteSample.match(vowelRegex); // Change this line
 console.log(result);
+
+// You saw how you can use character sets to specify a group of characters to match, but that's a lot of typing when you need to match a 
+// large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple.
+// Inside a character set, you can define a range of characters to match using a hyphen character: -.
+// For example, to match lowercase letters a through e you would use [a-e].
+ quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/g; // Change this line
+ result = quoteSample.match(alphabetRegex); // Change this line
+console.log(result);
+ quoteSample = "Blueberry 3.141592653s are delicious.";
+ myRegex = /[h-s2-6]/gi; // Change this line
+ result = quoteSample.match(myRegex); // Change this line
