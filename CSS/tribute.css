@@ -1,0 +1,28 @@
+@charset "UTF-8";
+#main {
+  font-size: 24px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+}
+#title {
+text-align: center;
+font-size: 50px;
+background: yellow;
+}
+#img-div{
+  background: green;
+  margin-top: 20px;
+  text-align: center;
+}
+#image {
+  position: relative; 
+  max-width: 100%;
+  height: 400px;
+}
+#img-caption {
+  text-decoration: underline;
+}
+#tribute-info {
+  text-align: center;
+}
