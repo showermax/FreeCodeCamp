@@ -19,6 +19,7 @@ background: yellow;
   position: relative; 
   max-width: 100%;
   height: 400px;
+  display: block;
 }
 #img-caption {
   text-decoration: underline;
