@@ -129,4 +129,10 @@ const myPlants = [
   
   const secondTree = myPlants[1].list[1];
 
+
+function Dog() {
+  this.name = "Nik";
+  this.color = "grey";
+  this.numLegs = 4;
+}
   
