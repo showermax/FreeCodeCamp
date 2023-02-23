@@ -144,3 +144,26 @@ function Dog(name, color) {
 let terrier = new Dog("Rex", "white");
 
 console.log(terrier.name);
+// Prototypes - common properties for all instances
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+
+ for (let prop in beagle) {
+   if (beagle.hasOwnProperty(prop)) {
+     ownProps.push(prop);
+   } else {
+     prototypeProps.push(prop);
+   }
+ }
+
+console.log(ownProps);
+console.log(prototypeProps);
