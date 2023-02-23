@@ -135,4 +135,12 @@ function Dog() {
   this.color = "grey";
   this.numLegs = 4;
 }
-  
+
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+let terrier = new Dog("Rex", "white");
+
+console.log(terrier.name);
