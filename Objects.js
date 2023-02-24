@@ -144,6 +144,7 @@ function Dog(name, color) {
 let terrier = new Dog("Rex", "white");
 
 console.log(terrier.name);
+
 // Prototypes - common properties for all instances
 function Dog(name) {
   this.name = name;
